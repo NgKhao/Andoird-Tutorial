@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:textSize="40dp" />
+    </TableRow>
+    <TableRow>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:text="Username"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+
+                    android:text="enter id"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Password"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    />
+                <TextView
+                    android:text="enter password"
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+    <TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:text="OK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <Button
+                android:text="CANCEL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                />
+            <Button
+                android:text="FORGOT PASSWORD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>
