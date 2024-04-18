@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="20dp"/>
+<!--    <solid android:color="#4CAF50"/>: tô 1 màu-->
+<!--        gradien là từ đậm sang nhạt hoặc pha 2 màu-->
+        <gradient
+            android:startColor="#009688"
+            android:endColor="#2196F3"/>
+
+</shape>

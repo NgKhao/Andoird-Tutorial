@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MyFirstProject</string>
+    <string-array name="country">
+        <item>Viet Nam</item>
+        <item>Lao</item>
+        <item>Capuchia</item>
+        <item>Trung Quoc</item>
+    </string-array>
 </resources>
