@@ -6,4 +6,11 @@
         <item>Capuchia</item>
         <item>Trung Quoc</item>
     </string-array>
+
+    <string-array name="phep">
+        <item>+</item>
+        <item>-</item>
+        <item>x</item>
+        <item>:</item>
+    </string-array>
 </resources>
