@@ -23,4 +23,12 @@
         app:layout_constraintTop_toBottomOf="@id/eTime"
         android:layout_marginTop="10dp"/>
 
+    <TextView
+        android:id="@+id/mMenu"
+        android:text="Menu"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/eDate"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
