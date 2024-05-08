@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ListViewDemo</string>
+    <string-array name="tech">
+        <item>Android</item>
+        <item>Java</item>
+        <item>C++</item>
+        <item>Python</item>
+        <item>Dart</item>
+    </string-array>
+</resources>
