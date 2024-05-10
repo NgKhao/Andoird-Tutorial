@@ -1,6 +1,8 @@
 package com.example.recycleviewdemo;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +18,7 @@ import com.example.recycleviewdemo.model.CatAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements CatAdapter.CatItemListener{
     private RecyclerView recyclerView;
     protected CatAdapter adapter;
     @Override
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.rview);
 
         adapter = new CatAdapter(getList());
+        adapter.setCatItemListener(this);
         GridLayoutManager manager = new GridLayoutManager(this, 3); // spanCount 3 cột
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adapter);
@@ -48,5 +51,11 @@ public class MainActivity extends AppCompatActivity {
         list.add(new Cat(R.drawable.cat6, "Mèo con 6"));
         return  list;
 
+    }
+
+    @Override
+    public void onItemClick(View view, int postion) {
+        Cat c = getList().get(postion);
+        Toast.makeText(this, c.getName(), Toast.LENGTH_SHORT).show();
     }
 }
