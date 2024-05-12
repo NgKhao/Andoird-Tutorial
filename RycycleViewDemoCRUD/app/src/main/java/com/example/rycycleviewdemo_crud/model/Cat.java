@@ -5,6 +5,9 @@ public class Cat {
     private String name, describe;
     private double price;
 
+    public Cat() {
+    }
+
     public Cat(int img, String name, String describe, double price) {
         this.img = img;
         this.name = name;

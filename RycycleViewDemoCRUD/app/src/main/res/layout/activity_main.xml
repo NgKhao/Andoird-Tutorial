@@ -64,6 +64,12 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
+    <SearchView
+        android:id="@+id/search"
+        android:queryHint="Search view"
+        android:iconifiedByDefault="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView"
         android:layout_width="match_parent"
